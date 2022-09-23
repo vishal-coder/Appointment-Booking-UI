@@ -30,6 +30,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/singlePost" element={<Single />} />
         <Route path="/doctorList" element={<HomeDoctorList />} />
+        <Route path="/doctorList/:category" element={<HomeDoctorList />} />
         <Route path="/List" element={<DoctorList />} />
 
         <Route path="forgotpassword" element={<ForgotPassword />} />

@@ -18,7 +18,7 @@
 
 .sidebarItem {
   padding-top: 0.5rem;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@
   width: 50%;
   margin-top: 1rem;
   cursor: pointer;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 .sidebarListItem:hover {
@@ -54,6 +54,7 @@
   width: 100%;
   border-top: 1px solid #a7a4a4;
   border-bottom: 1px solid #a7a4a4;
+  padding-left: 2rem;
 }
 
 .sidebarImg {
@@ -62,6 +63,21 @@
   display: block;
 }
 
+.link-active {
+  color: red;
+  /* background-color: white; */
+  text-decoration: none;
+}
+
 ul {
   padding-left: 2rem !important;
+}
+
+.active {
+  background-color: yellow;
+}
+
+a {
+  /* color: var(--bs-link-color); */
+  text-decoration: none !important;
 }
