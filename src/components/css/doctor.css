@@ -1,48 +1,59 @@
-.post {
-  width: 385px;
+.doctor {
+  width: 350px;
   margin: 10px 25px 40px 25px;
+  text-align: center;
+  border: 1px solid #e3aeae;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
-.postimg {
-  width: 100%;
-  height: 280px;
+.doctorimg {
+  width: 50%;
+  height: 220px;
   object-fit: cover;
   border-radius: 1rem;
 }
 
-.postinfo {
+.doctorinfo {
+  border-top: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.postcat {
+.doctorcat {
   font-size: 11px;
   line-height: 20px;
   margin-top: 1rem;
   /* margin-right: 2rem; */
-  cursor: pointer;
+  cursor: default;
+
   color: cornflowerblue;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.posttitle {
+.doctortitle {
   font-size: 24px;
   font-weight: 500;
   margin-top: 0.5rem;
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: default;
+  color: #59ce8f;
+}
+.exp {
+  cursor: default;
 }
 
-.postdate {
+.doctordate {
   font-style: italic;
   font-size: 13px;
   color: cornflowerblue;
 }
-.postdescription {
-  font-size: 14x;
+.doctordescription {
+  font-size: 14px;
   line-height: 2rem;
   margin-top: 1rem;
   overflow: hidden;
@@ -50,4 +61,8 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.education {
+  font-size: small;
 }

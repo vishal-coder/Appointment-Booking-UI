@@ -3,20 +3,19 @@ import "./App.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Single from "./components/Single";
-import createpost from "./components/CreatePost.js";
+import { Route, Routes } from "react-router-dom";
+import ForgotPassword from "./components/ForgotPassword.js";
 import Login from "./components/Login";
+import Navbar from "./components/Navbar";
 import Register from "./components/Register";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import RegistrationSuccess from "./components/RegistrationSuccess";
 import ResetPassword from "./components/ResetPassword";
+import Single from "./components/Single";
 import VerifyEmail from "./components/VerifyEmail";
 import VerifyToken from "./components/VerifyToken";
-import ForgotPassword from "./components/ForgotPassword.js";
 
+import DoctorList from "./components/DoctorList";
 import Header from "./components/Header.js";
+import HomeDoctorList from "./components/HomeDoctorList";
 
 function App() {
   return (
@@ -30,6 +29,9 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/singlePost" element={<Single />} />
+        <Route path="/doctorList" element={<HomeDoctorList />} />
+        <Route path="/List" element={<DoctorList />} />
+
         <Route path="forgotpassword" element={<ForgotPassword />} />
         <Route path="/verifyEmail/:token" element={<VerifyEmail />} />
         <Route path="/verifyToken" element={<VerifyToken />} />

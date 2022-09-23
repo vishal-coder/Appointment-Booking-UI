@@ -22,12 +22,9 @@
 }
 
 .nav-link:hover {
-  /* border-radius: 2rem;
-  color: white;*/
   color: #800000;
   border-radius: 30px;
   transition: 0.2s;
-  animation: shake 0.5s;
 }
 
 .top {
@@ -82,24 +79,6 @@
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
-}
-
-@keyframes shake {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(0eg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 .user {

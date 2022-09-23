@@ -1,21 +1,23 @@
-import "./css/post.css";
+import "./css/doctor.css";
+import { PersonCircle } from "react-bootstrap-icons";
+import Button from "react-bootstrap/Button";
 
-function Post() {
+function Doctor() {
   return (
-    <div className="post">
-      <img
-        className="postimg"
-        src="https://images.pexels.com/photos/6348119/pexels-photo-6348119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Donate Image"
-      />
-      <div className="postinfo">
-        <div className="postcat">
-          <div>Mediclaim</div>
-          <div className=" "> Created on 22-09-2022</div>
+    <div className="doctor">
+      {/* <img className="doctorimg" src={profile} alt="Donate Image" /> */}
+      <PersonCircle className="doctorimg" />
+      <div className="doctorinfo">
+        <div className="doctorcat">
+          <div>Dept:- Department Name</div>
+          <div className="exp"> Exp: 4 years</div>
         </div>
-        <span className="posttitle"> this is post title with super text</span>
+        <span className="doctortitle">
+          {" "}
+          Name of Doctor<samp className="education"> M.D.</samp>
+        </span>
       </div>
-      <p className="postdescription">
+      <p className="doctordescription">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quam,
         vitae et quia eaque aut obcaecati ea. Sequi corporis, nam at, repellat
         placeat doloribus vitae incidunt numquam deleniti corrupti rem. Lorem
@@ -27,8 +29,11 @@ function Post() {
         quam repellat adipisci, repellendus eum laborum accusamus dolor quae! At
         itaque expedita ab.
       </p>
+      <Button variant="warning" type="submit" className="">
+        Book Appointment
+      </Button>
     </div>
   );
 }
 
-export default Post;
+export default Doctor;

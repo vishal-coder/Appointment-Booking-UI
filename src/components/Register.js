@@ -20,7 +20,6 @@ function Register() {
     phone: string().required().min(10),
     username: string().email().required(),
     address: string().required().min(30),
-    about: string().required().min(30),
     password: string().required().min(6),
   });
 
@@ -40,7 +39,6 @@ function Register() {
       phone: "",
       username: "",
       address: "",
-      about: "",
       password: "",
     },
     validationSchema: formvalidation,
@@ -63,7 +61,7 @@ function Register() {
   return (
     <div className="register">
       <Form className="registerForm" onSubmit={handleSubmit}>
-        <h3>Register to use our services</h3>
+        <h3>Fill Patients Information</h3>
         {touched.firstname && errors.firstname ? (
           <div className="error">{errors.firstname}</div>
         ) : (
@@ -151,22 +149,7 @@ function Register() {
             onBlur={handleBlur}
           />
         </Form.Group>
-        {touched.about && errors.about ? (
-          <div className="error">{errors.about}</div>
-        ) : (
-          ""
-        )}
-        <Form.Group className="mb-3" controlId="formGridAbout">
-          <Form.Label>About Yourself</Form.Label>
-          <Form.Control
-            as="textarea"
-            placeholder="Let others know about you"
-            name="about"
-            value={values.about}
-            onChange={handleChange}
-            onBlur={handleBlur}
-          />
-        </Form.Group>
+
         {touched.password && errors.password ? (
           <div className="error">{errors.password}</div>
         ) : (
@@ -185,7 +168,7 @@ function Register() {
         </Form.Group>
         <div className="registerbtngrp">
           <Button
-            variant="primary"
+            variant="success"
             type="submit"
             className="registerBtn"
             disabled={loading}

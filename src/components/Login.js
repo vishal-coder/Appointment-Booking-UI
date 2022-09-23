@@ -21,7 +21,7 @@ function Login() {
     } else {
       dispatch(setUser(response));
       if (response.user.userType != "admin") {
-        navigate("/singlePost");
+        navigate("/doctorList");
       } else {
         navigate("/singlePost");
       }
@@ -89,7 +89,7 @@ function Login() {
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit" className="loginbtn">
+        <Button variant="success" type="submit" className="loginbtn">
           Login
         </Button>
         <Form.Group className="mb-3 loginhelper" controlId="formBasicCheckbox">
