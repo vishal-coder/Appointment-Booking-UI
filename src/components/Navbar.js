@@ -32,25 +32,23 @@ function HeaderComponent() {
   return (
     <Navbar collapseOnSelect expand="lg" fixed="top" className="sticky-nav">
       <Container>
-        <Navbar.Brand>FundME</Navbar.Brand>
+        <Navbar.Brand
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Hospital Portal
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link
               onClick={() => {
-                navigate("/");
-              }}
-            >
-              Home{" "}
-            </Nav.Link>
-            <Nav.Link
-              onClick={() => {
                 navigate("/posts");
               }}
             >
-              Listings
+              View Doctors
             </Nav.Link>
-            <Nav.Link href="#pricing">Search</Nav.Link>
           </Nav>
           <Nav>
             {!user ? (

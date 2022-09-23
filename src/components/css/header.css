@@ -1,15 +1,17 @@
 .header {
+  max-height: 90vh;
+  overflow: hidden;
 }
 .headertitles {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #800000;
+  color: #59ce8f;
 
   gap: 1rem;
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -26,6 +28,5 @@
 }
 .headerimg {
   width: 100%;
-  max-height: 90vh;
   object-fit: cover;
 }

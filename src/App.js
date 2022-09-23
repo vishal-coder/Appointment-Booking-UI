@@ -16,14 +16,17 @@ import VerifyEmail from "./components/VerifyEmail";
 import VerifyToken from "./components/VerifyToken";
 import ForgotPassword from "./components/ForgotPassword.js";
 
+import Header from "./components/Header.js";
+
 function App() {
   return (
     <div className="App">
       <ToastContainer theme="colored" />
       <Navbar />
+      {/* <Header /> */}
       {/* <div className="separator"></div> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Header />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/singlePost" element={<Single />} />

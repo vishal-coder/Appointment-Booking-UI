@@ -4,7 +4,7 @@
 
 .navbar-brand {
   font-weight: 700;
-  color: #800000;
+  color: #59ce8f;
 }
 .navbar-brand:hover {
   color: white;
@@ -12,7 +12,8 @@
 .sticky-nav {
   position: sticky;
   top: 0;
-  background-color: teal;
+  background-color: #c61902;
+
   z-index: 999;
 }
 
