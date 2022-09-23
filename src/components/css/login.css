@@ -1,0 +1,48 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.loginForm {
+  width: 30%;
+}
+.loginbtn {
+  width: 100%;
+  /* background-color: #1100ff; */
+  /* #FF9100 */
+  /*  */
+}
+
+.loginhelper {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 400px) {
+  .login {
+    width: 90%;
+  }
+  .loginForm {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login {
+    width: 70%;
+  }
+  .loginForm {
+    width: 90%;
+  }
+}

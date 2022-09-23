@@ -1,0 +1,97 @@
+body {
+  background-color: #d6eee2;
+}
+.error {
+  color: red;
+}
+.successResponse {
+  padding: 20px;
+  background-color: #caf9c4;
+  text-align: center;
+}
+
+.separator {
+  height: 15rem;
+}
+.errorResponse {
+  padding: 20px;
+  background-color: #f9c4c4;
+  text-align: center;
+}
+
+.defaultShadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.forgotpasswordwrapper {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: 3rem;
+  line-height: 1.5;
+}
+
+.resetpassworddiv {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.modal-50w {
+  width: 50%;
+  height: 80%;
+  max-width: none !important;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  border-radius: 50%;
+  border-radius: 5%;
+}
+
+.card {
+  border-radius: 5%;
+}
+.hideEle {
+  display: none;
+}
+
+.image404 {
+  width: 50vw;
+  height: 60vh;
+  object-fit: cover;
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .forgotpasswordwrapper {
+    width: 50%;
+  }
+  .resetpassworddiv {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .forgotpasswordwrapper {
+    width: 70%;
+  }
+  .resetpassworddiv {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .forgotpasswordwrapper {
+    width: 90%;
+  }
+  .resetpassworddiv {
+    width: 90%;
+  }
+}

@@ -1,0 +1,48 @@
+.postdetails {
+  flex: 9;
+}
+
+.postdetailswrapper {
+  padding: 20px;
+  padding-right: 0;
+}
+.singlepostimg {
+  width: 100%;
+  margin-top: 0.5rem;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.singleposttitle {
+  text-align: center;
+  margin: 2rem;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.singepostedit {
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.singlePosticon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlepostinfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.singlepostdesc {
+  font-size: 18px;
+  line-height: 2rem;
+}
+
+.singlepostdesc::first-letter {
+  font-weight: 700;
+  margin-left: 3rem;
+}

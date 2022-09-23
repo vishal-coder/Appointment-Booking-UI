@@ -1,0 +1,31 @@
+.header {
+}
+.headertitles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.headertitlemain {
+  /* position: absolute; */
+  font-size: 30px;
+  font-weight: 700;
+}
+.headertitlSM {
+  /* position: absolute; */
+  font-size: 5rem;
+  /* display: block; */
+}
+.headerimg {
+  width: 100%;
+  max-height: 90vh;
+  object-fit: cover;
+}
