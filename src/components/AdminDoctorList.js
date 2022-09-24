@@ -124,7 +124,7 @@ function AdminDoctorList() {
     <div className="listdashboard">
       {doctorList && doctorList.length > 0 ? (
         <MUIDataTable
-          title={"Employee List"}
+          title={"Doctor List"}
           data={doctorList}
           columns={columns}
           options={options}

@@ -4,10 +4,14 @@
   flex-direction: column;
   align-content: center;
   overflow: auto;
+  text-align: center;
 }
 
 .admintabs {
   color: black;
+}
+.listdashboard {
+  text-align: center;
 }
 
 .addproductwrapper {
@@ -32,4 +36,8 @@
 
 .warningText {
   color: red !important;
+}
+
+.tab-content {
+  margin: 1rem;
 }

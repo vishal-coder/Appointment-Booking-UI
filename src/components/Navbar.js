@@ -44,7 +44,7 @@ function HeaderComponent() {
           <Nav className="me-auto">
             <Nav.Link
               onClick={() => {
-                navigate("/doctorList");
+                navigate("/doctorList/All");
               }}
             >
               View Doctors

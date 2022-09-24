@@ -11,6 +11,16 @@ function Sidebar() {
         <span className="sidebarTitle">CATEGORIES </span>
         <ul className="sidebarList">
           <li className="sidebarListItem" onClick={(e) => handleclick(e)}>
+            <NavLink
+              to="/doctorList/All"
+              className={({ isActive }) =>
+                isActive ? "link-active sidebarItem" : "link sidebarItem "
+              }
+            >
+              All
+            </NavLink>
+          </li>
+          <li className="sidebarListItem" onClick={(e) => handleclick(e)}>
             {/* Dental */}
             <NavLink
               to="/doctorList/Dental"
