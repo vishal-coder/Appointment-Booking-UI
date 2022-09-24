@@ -23,7 +23,7 @@ function Login() {
       dispatch(setUser(response.user));
       console.log(response.user);
       if (response.user.userType != "admin") {
-        navigate("/doctorList");
+        navigate("/doctorList/All");
       } else {
         navigate("/admin");
       }

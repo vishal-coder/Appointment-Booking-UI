@@ -1,8 +1,12 @@
 import "./css/doctor.css";
 import { PersonCircle } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function Doctor({ doctor }) {
+  const { user } = useSelector((state) => state.auth);
+  const navigate = useNavigate();
   return (
     <div className="doctor">
       <PersonCircle className="doctorimg" />
@@ -29,9 +33,18 @@ function Doctor({ doctor }) {
         earum perferendis neque amet quam repellat adipisci, repellendus eum
         laborum accusamus dolor quae! At itaque expedita ab.
       </p>
-      <Button variant="warning" type="submit" className="">
-        Book Appointment
-      </Button>
+      {user && (
+        <Button
+          variant="warning"
+          type="submit"
+          className=""
+          onClick={() => {
+            navigate(`/bookAppointment/${doctor._id}`);
+          }}
+        >
+          Book Appointment
+        </Button>
+      )}
     </div>
   );
 }

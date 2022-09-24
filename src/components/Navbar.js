@@ -57,7 +57,15 @@ function HeaderComponent() {
               >
                 Admin
               </Nav.Link>
-            ) : null}
+            ) : (
+              <Nav.Link
+                onClick={() => {
+                  navigate("/appointments");
+                }}
+              >
+                MyAppointments
+              </Nav.Link>
+            )}
           </Nav>
           <Nav>
             {!user ? (

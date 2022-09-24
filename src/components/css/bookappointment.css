@@ -1,0 +1,39 @@
+.bookAppointmentwrapper {
+  background-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 50%;
+  display: flex;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+h4 {
+  padding-bottom: 1rem;
+}
+.appointmentFormDiv {
+  flex: 9;
+  padding-right: 1rem;
+}
+.appointmentSideDiv {
+  text-align: center;
+  padding-left: 1rem;
+  flex: 3;
+  border-left: 1px solid black;
+}
+ul {
+  list-style: none;
+}
+
+.slotItem {
+  cursor: pointer;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  background-color: azure;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: greenyellow;
+}
