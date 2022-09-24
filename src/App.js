@@ -16,6 +16,7 @@ import VerifyToken from "./components/VerifyToken";
 import DoctorList from "./components/DoctorList";
 import Header from "./components/Header.js";
 import HomeDoctorList from "./components/HomeDoctorList";
+import Admin from "./components/Admin";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/doctorList" element={<HomeDoctorList />} />
         <Route path="/doctorList/:category" element={<HomeDoctorList />} />
         <Route path="/List" element={<DoctorList />} />
+        <Route path="/admin" element={<Admin />} />
 
         <Route path="forgotpassword" element={<ForgotPassword />} />
         <Route path="/verifyEmail/:token" element={<VerifyEmail />} />

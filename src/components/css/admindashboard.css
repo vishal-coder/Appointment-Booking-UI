@@ -1,0 +1,35 @@
+.dashboardwrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  overflow: auto;
+}
+
+.admintabs {
+  color: black;
+}
+
+.addproductwrapper {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.Productlistwrapper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.warningText {
+  color: red !important;
+}

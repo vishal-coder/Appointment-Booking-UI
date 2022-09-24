@@ -49,6 +49,15 @@ function HeaderComponent() {
             >
               View Doctors
             </Nav.Link>
+            {user && user.userType === "admin" ? (
+              <Nav.Link
+                onClick={() => {
+                  navigate("/admin");
+                }}
+              >
+                Admin
+              </Nav.Link>
+            ) : null}
           </Nav>
           <Nav>
             {!user ? (
@@ -71,7 +80,7 @@ function HeaderComponent() {
               </>
             ) : (
               <>
-                <Navbar.Text>Welcome, {user.user.name}</Navbar.Text>
+                <Navbar.Text>Welcome, {user.name}</Navbar.Text>
                 <Nav.Link
                   onClick={() => {
                     handleLogout();

@@ -16,14 +16,16 @@ function Login() {
   const handleLogin = async (values) => {
     const response = await requestLogin(values);
     console.log(response);
+    console.log(response);
     if (!response.success) {
       setFieldError("username", response.message);
     } else {
-      dispatch(setUser(response));
+      dispatch(setUser(response.user));
+      console.log(response.user);
       if (response.user.userType != "admin") {
         navigate("/doctorList");
       } else {
-        navigate("/singlePost");
+        navigate("/admin");
       }
     }
   };

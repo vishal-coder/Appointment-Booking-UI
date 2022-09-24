@@ -1,0 +1,45 @@
+.addDoctor {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: white;
+}
+
+.addDoctorForm {
+  width: 40%;
+}
+.addDoctorbtngrp {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.addDoctorBtn,
+.resetBtn {
+  width: 40%;
+}
+h3 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .addDoctorForm {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .addDoctorForm {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .addDoctorForm {
+    width: 70%;
+  }
+}
