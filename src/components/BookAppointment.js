@@ -35,22 +35,14 @@ function BookAppointment() {
   ];
 
   let { doctorId } = useParams();
-  console.log("doctorId", doctorId);
-
   const doctor = doctorList.filter((doctor) => doctor._id == doctorId);
   let fullname = doctor[0].firstname + " " + doctor[0].lastname;
   const [name, setName] = useState(fullname);
   const [department, setDepartment] = useState(doctor[0].department);
   const [selectedSlot, setSelectedSlot] = useState("");
 
-  console.log("doctor", name);
-  console.log("doctor", department);
-  console.log("doctor", doctor);
-
-  console.log("startDate", formatOnlyDate(startDate));
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("form submitted");
     if (selectedSlot == null || selectedSlot == "") {
       toast.warning("please select time slot");
       return;
@@ -62,7 +54,7 @@ function BookAppointment() {
       slot: selectedSlot,
       bookedBy: user.email,
     };
-    console.log("values", values);
+
     const response = await addAppointment(values, user.token);
     if (response.success) {
       toast.success("Appointment booked successfully");
@@ -72,7 +64,6 @@ function BookAppointment() {
   };
 
   const handleSelectSlot = (index) => {
-    console.log({ index });
     setSelectedSlot(timeSlot[index]);
   };
   return (

@@ -19,16 +19,12 @@ function AdminAppointmentView() {
         { email: user.email, userType: user.userType },
         user.token
       );
-      console.log("resonse of get appointments", response);
       setAptList(response.list);
     }
     getData();
   }, []);
 
   const handleUpdateStatus = async (value) => {
-    // console.log(value.rowData[5]);
-    // return;
-
     const response = await updateAppointments({
       _id: value,
       status: "cancelled",
@@ -109,32 +105,10 @@ function AdminAppointmentView() {
         sort: false,
       },
     },
-
-    // {
-    //   name: "",
-    //   label: "Action",
-    //   options: {
-    //     filter: true,
-    //     sort: false,
-    //     customBodyRender: (value, tableMeta, updateValue) => {
-    //       return tableMeta.rowData[5] != "cancelled" ? (
-    //         <button
-    //           onClick={(e) => {
-    //             handleUpdateStatus(tableMeta.rowData[0]);
-    //           }}
-    //         >
-    //           Cancel
-    //         </button>
-    //       ) : (
-    //         "No action"
-    //       );
-    //     },
-    //   },
-    // },
   ];
 
   const options = {
-    selectableRows: false,
+    selectableRows: "none",
     print: false,
   };
 

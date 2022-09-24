@@ -9,7 +9,6 @@ import {
 import { formatDate } from "../services/UtilityService.js";
 
 function MyAppointments() {
-  const dispatch = useDispatch();
   const [aptList, setAptList] = useState(null);
   const { user } = useSelector((state) => state.auth);
 
@@ -19,22 +18,19 @@ function MyAppointments() {
         { email: user.email, userType: user.userType },
         user.token
       );
-      console.log("resonse of get appointments", response);
+
       setAptList(response.list);
     }
     getData();
   }, []);
 
   const handleUpdateStatus = async (value) => {
-    // console.log(value.rowData[5]);
-    // return;
-
     const response = await updateAppointments({
       _id: value,
       status: "cancelled",
     });
     const updatedList = aptList.filter((item) => {
-      return item._id === value ? (item.status = "Cancelled") : item;
+      return item._id === value ? (item.status = "cancelled") : item;
     });
     if (response.success) {
       toast.success(response.message);
@@ -125,7 +121,7 @@ function MyAppointments() {
   ];
 
   const options = {
-    selectableRows: false,
+    selectableRows: "none",
     print: false,
   };
 

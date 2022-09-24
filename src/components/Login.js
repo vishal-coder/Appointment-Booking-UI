@@ -17,8 +17,6 @@ function Login() {
   const dispatch = useDispatch();
   const handleLogin = async (values) => {
     const response = await requestLogin(values);
-    console.log(response);
-    console.log(response);
     if (!response.success) {
       setFieldError("username", response.message);
     } else {
@@ -32,7 +30,6 @@ function Login() {
         toast.success("New appointment scheduled by patient");
       });
 
-      console.log(response.user);
       if (response.user.userType != "admin") {
         navigate("/doctorList/All");
       } else {

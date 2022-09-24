@@ -9,25 +9,13 @@ import { setdoctorList } from "../features/doctorSlice.js";
 
 function AdminDoctorList() {
   const dispatch = useDispatch();
-  //   const [doctorList, setDoctorList] = useState(null);
   const { doctorList } = useSelector((state) => state.doctor);
 
-  //   useEffect(() => {
-  //     async function getData() {
-  //       const response = await getDoctorList();
-  //       setDoctorList(response.doctors);
-  //     }
-  //     getData();
-  //   }, []);
-
   const handleDelete = async (email) => {
-    console.log(email);
     const updatedList = doctorList.filter((item, index) => {
       return item.email != email;
     });
     dispatch(setdoctorList(updatedList));
-
-    console.log("updatedList", updatedList);
     const response = await deleteDoctor({ email: email });
     if (response.success) {
       toast.success("User deleted successfully");
@@ -109,7 +97,7 @@ function AdminDoctorList() {
   ];
 
   const options = {
-    selectableRows: false,
+    selectableRows: "none",
     print: false,
   };
 

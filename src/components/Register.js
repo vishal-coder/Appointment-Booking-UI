@@ -43,7 +43,6 @@ function Register() {
     },
     validationSchema: formvalidation,
     onSubmit: async (values) => {
-      console.log(values);
       setLoading(true);
       const response = await submitRegistration(values);
       if (!response.success) {

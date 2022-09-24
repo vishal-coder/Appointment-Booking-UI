@@ -56,7 +56,6 @@ function AddDoctor() {
     },
     validationSchema: formvalidation,
     onSubmit: async (values) => {
-      console.log(values);
       setLoading(true);
       const response = await addNewDoctor(values);
       setLoading(false);
