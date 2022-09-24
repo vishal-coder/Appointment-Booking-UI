@@ -4,6 +4,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import AddDoctor from "./AddDoctor.js";
 import AdminDoctorList from "./AdminDoctorList.js";
+import AdminAppointmentView from "./AdminAppointmentView";
 
 function Admin() {
   return (
@@ -22,7 +23,7 @@ function Admin() {
           <AdminDoctorList />
         </Tab>
         <Tab eventKey="appointments" title="Appointments">
-          {/* <ProductList /> */}
+          <AdminAppointmentView />
         </Tab>
       </Tabs>
     </div>

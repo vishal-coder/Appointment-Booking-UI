@@ -8,7 +8,7 @@ import {
 } from "../services/AppointmentService";
 import { formatDate } from "../services/UtilityService.js";
 
-function MyAppointments() {
+function AdminAppointmentView() {
   const dispatch = useDispatch();
   const [aptList, setAptList] = useState(null);
   const { user } = useSelector((state) => state.auth);
@@ -62,6 +62,14 @@ function MyAppointments() {
         sort: true,
       },
     },
+    {
+      name: "bookedBy",
+      label: "Patient Name ",
+      options: {
+        filter: true,
+        sort: false,
+      },
+    },
 
     {
       name: "date",
@@ -101,27 +109,28 @@ function MyAppointments() {
         sort: false,
       },
     },
-    {
-      name: "",
-      label: "Action",
-      options: {
-        filter: true,
-        sort: false,
-        customBodyRender: (value, tableMeta, updateValue) => {
-          return tableMeta.rowData[5] != "cancelled" ? (
-            <button
-              onClick={(e) => {
-                handleUpdateStatus(tableMeta.rowData[0]);
-              }}
-            >
-              Cancel
-            </button>
-          ) : (
-            "No action"
-          );
-        },
-      },
-    },
+
+    // {
+    //   name: "",
+    //   label: "Action",
+    //   options: {
+    //     filter: true,
+    //     sort: false,
+    //     customBodyRender: (value, tableMeta, updateValue) => {
+    //       return tableMeta.rowData[5] != "cancelled" ? (
+    //         <button
+    //           onClick={(e) => {
+    //             handleUpdateStatus(tableMeta.rowData[0]);
+    //           }}
+    //         >
+    //           Cancel
+    //         </button>
+    //       ) : (
+    //         "No action"
+    //       );
+    //     },
+    //   },
+    // },
   ];
 
   const options = {
@@ -144,4 +153,4 @@ function MyAppointments() {
     </div>
   );
 }
-export default MyAppointments;
+export default AdminAppointmentView;

@@ -57,7 +57,8 @@ function HeaderComponent() {
               >
                 Admin
               </Nav.Link>
-            ) : (
+            ) : null}
+            {user && user.userType != "admin" ? (
               <Nav.Link
                 onClick={() => {
                   navigate("/appointments");
@@ -65,7 +66,7 @@ function HeaderComponent() {
               >
                 MyAppointments
               </Nav.Link>
-            )}
+            ) : null}
           </Nav>
           <Nav>
             {!user ? (

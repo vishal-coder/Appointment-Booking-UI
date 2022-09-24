@@ -61,14 +61,7 @@ function AdminDoctorList() {
         sort: false,
       },
     },
-    // {
-    //   name: "phone",
-    //   label: "Phone",
-    //   options: {
-    //     filter: true,
-    //     sort: false,
-    //   },
-    // },
+
     {
       name: "education",
       label: "Education",

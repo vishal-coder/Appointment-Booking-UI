@@ -1,14 +1,4 @@
 .sidebar {
-  /* width: 20%;
-  margin: 10px;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: calc(100vh - 144px);
-  */
-  /* margin-top: calc(100vh - 144px); */
   width: 15%;
   height: 90vh;
   overflow: hidden;
@@ -64,7 +54,7 @@
 }
 
 .link-active {
-  color: red;
+  color: #c61902;
   /* background-color: white; */
   text-decoration: none;
 }
