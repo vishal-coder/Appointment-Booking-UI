@@ -10,6 +10,8 @@ import { useDispatch } from "react-redux";
 import { requestLogin } from "../services/authService.js";
 import { setUser } from "../features/auth/authSlice.js";
 import { toast } from "react-toastify";
+import { socket } from "../context/socket";
+
 function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -21,6 +23,15 @@ function Login() {
       setFieldError("username", response.message);
     } else {
       dispatch(setUser(response.user));
+      socket.emit("new user", {
+        username: response.user.email,
+        userType: response.user.userType,
+      });
+
+      socket.on("new appointment", (data) => {
+        toast.success("New appointment scheduled by patient");
+      });
+
       console.log(response.user);
       if (response.user.userType != "admin") {
         navigate("/doctorList/All");
