@@ -39,4 +39,11 @@ Hospital Appointment Booking website is a platform where patients can  book appo
   
 
 ## Screenshots📷
-![Alt text](/ScreenShots/Homepage.JPG "Optional title")
+![Homepage](/ScreenShots/Homepage.JPG "Homepage")
+![Doctor List](/ScreenShots/DoctorList.JPG "Doctor List")
+![Appoinment Form](/ScreenShots/AppoinmentForm.JPG "Appoinment Form")
+![Patient Appointment view](/ScreenShots/Patient-App-list.JPG "Patient Appointment view")
+![Admin Add Doctor Form](/ScreenShots/Add-DoctorForm.JPG "Admin Add Doctor Form")
+![Admin DoctorList](/ScreenShots/Admin-DoctorList.JPG "Admin DoctorList")
+![Admin Appoinment View](/ScreenShots/Admin-PatientList.JPG "Admin Appoinment View")
+
