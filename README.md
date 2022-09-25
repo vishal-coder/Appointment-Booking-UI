@@ -1,4 +1,4 @@
-# [Hospital Appointment Booking] (https://booking-vg.netlify.app/) - MERN Stack Website
+# [Hospital Appointment Booking](https://booking-vg.netlify.app/) - MERN Stack Website
 
 
 
