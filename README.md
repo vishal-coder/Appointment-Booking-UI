@@ -39,3 +39,4 @@ Hospital Appointment Booking website is a platform where patients can  book appo
   
 
 ## Screenshots📷
+![Alt text](/ScreenShots/Homepage.JPG "Optional title")
