@@ -129,7 +129,7 @@ function MyAppointments() {
     <div className="listdashboard">
       {aptList && aptList.length > 0 ? (
         <MUIDataTable
-          title={"Appoointment List"}
+          title={"Appointment List"}
           data={aptList}
           columns={columns}
           options={options}
